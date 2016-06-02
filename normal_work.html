@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blood-Shot Design Normal Photography</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- navigation --> 
+<body class="news">
+    <header>
+    <div class="nav">
+    <ul>
+  <!-- work -->            
+            <li class="work" class="active"><a class="active" href="#">WORK</a>
+            <ul>
+      <!-- icon 1 -->   
+            <li>  <a href="food_work.html"> <img src="images/slide_icon_1.png" ult="food photography";> </a> </li>
+      <!-- icon 2 -->     
+            <li><a href="normal_work.html"> <img src="images/slide_icon_2.png" ult="normal photography";> </a></li>
+      <!-- icon 3 -->       
+            <li><a href="typography_work.html"> <img src="images/slide_icon_3.png" ult="typography";> </a> </li>
+      </ul>
+  <!-- shop -->  
+        <li class="shop"><a href="shop.html">SHOP</a></li>
+  <!-- community --> 
+        <li class="community"><a href="community.html">COMMUNITY</a></li>
+  <!-- ********logo*********** --> 
+        <li>  <a id="logo" href="index.html"> <img src="images/logo_2.png" ult="food photography";> </a> </li>
+  <!-- blog --> 
+          <li class="blog"> BLOG</a>
+          <ul>
+      <!-- icon 4 --> 
+          <a href="graphic_design_blog.html"> <img src="images/slide_icon_4.png" ult="graphic design blog";> </a> </li>
+      <!-- icon 5 --> 
+          <a href="fun_blog.html"> <img src="images/slide_icon_5.png" ult="fun blog";> </a> </li>
+          </ul>
+        </li>
+  <!-- about --> 
+          <li class="about"><a href="about.html">ABOUT</a></li>
+  <!-- contact --> 
+          <li class="contact"><a href="contact.html">CONTACT</a> </li>
+          </ul>
+
+  </div>
+  </header>
+</body>
+
+<h1 style="text-align:center">PHOTOGRAPHY GALLERY</h1>
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/work_normal_2.jpg"  alt="Steak"  >
+    <div class="desc">Trolltunga Norway</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_1.jpg" alt="Pizza">
+    <div class="desc">Forest Bridge</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_3.jpg" alt="Northern Lights" width="300" height="200">
+    <div class="desc">Northern Lights, Norway</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_4.jpg" alt="Mountains" width="300" height="200">
+    <div class="desc">Beautiful Mountains</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_5.jpg" alt="Forest" width="300" height="200">
+    <div class="desc">Forest Bridge</div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/work_normal_2.jpg"  alt="Steak"  >
+    <div class="desc">Trolltunga Norway</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_1.jpg" alt="Pizza">
+    <div class="desc">Forest Bridge</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_3.jpg" alt="Northern Lights" width="300" height="200">
+    <div class="desc">Northern Lights, Norway</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="img">
+    <img src="images/work_normal_4.jpg" alt="Mountains" width="300" height="200">
+    <div class="desc">Beautiful Mountains</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">X</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+var modal = document.getElementById('myModal');
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+</script>
+
+</body>
+
+
+
+<!-- footer --> 
+<footer id="footer" class="social"> 
+  <!-- instagram --> 
+          <li> <div <a href='https://www.instagram.com'> <img src="images/social_icon_2.png" alt="twitter"> </div> 
+          </li>
+  <!-- facebook --> 
+        <li> <div <a href="https://www.facebook.com/BloodShotDesignPhotographyCooking/"> <img src="images/social_icon_1.png" alt="facebook"> </a> </div> 
+        </li>
+  <!-- twitter --> 
+        <li> <div <a href="index.html"> <img src="images/social_icon_3.png" alt="instagram"> </div> 
+        </li>
+  </div>
+  </footer>
+
+</html>
